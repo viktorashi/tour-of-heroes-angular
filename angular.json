@@ -31,8 +31,7 @@
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
+              "budgets": [ {
                   "type": "initial",
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
@@ -63,7 +62,8 @@
               "browserTarget": "tour-of-heroes-angular:build:production"
             },
             "development": {
-              "browserTarget": "tour-of-heroes-angular:build:development"
+              "browserTarget": "tour-of-heroes-angular:build:development",
+              "host": "0.0.0.0"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9c33e6b0-b7c1-4593-b2e7-98b391a61ad6"
   }
 }

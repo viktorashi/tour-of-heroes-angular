@@ -1,0 +1,11 @@
+<h2> {{hero.name | titlecase}} details: </h2>
+<div><span>id: </span>{{hero.id}} </div>
+<div>
+    <label for="name">Hero name:</label>
+    <input type="text" id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
+<div>
+    <label for="bday">Birfdey:</label>
+    <input type="date" id="bday" [(ngModel)]="hero.birthday| date : 'longDate'">
+</div>
+<div><span>Price: </span>{{hero.price | currency : _defaultCurrencyCode }} </div>
