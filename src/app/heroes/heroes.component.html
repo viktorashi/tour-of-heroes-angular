@@ -6,6 +6,9 @@
 </div>
 <div>
     <label for="bday">Birfdey:</label>
-    <input type="date" id="bday" [(ngModel)]="hero.birthday| date : 'longDate'">
+    <input type="date" id="bday" [(ngModel)]="hero.birthday">
 </div>
-<div><span>Price: </span>{{hero.price | currency : _defaultCurrencyCode }} </div>
+<div>
+    <label for="price">Price: $ </label>
+    <input type="number" id="price" [(ngModel)]="hero.price">
+</div>
