@@ -5,8 +5,8 @@
     <input type="text" id="name" [(ngModel)]="hero.name" placeholder="name">
 </div>
 <div>
-    <label for="bday">Birfdey:</label>
-    <input type="date" id="bday" [(ngModel)]="hero.birthday">
+    <span for="bday">Birfdey:</span>
+    {{hero.birthday | date : "longDate"}}
 </div>
 <div>
     <label for="price">Price: $ </label>
