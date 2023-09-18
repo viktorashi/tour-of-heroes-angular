@@ -1,14 +1,9 @@
-<h2> {{hero.name | titlecase}} details: </h2>
-<div><span>id: </span>{{hero.id}} </div>
-<div>
-    <label for="name">Hero name:</label>
-    <input type="text" id="name" [(ngModel)]="hero.name" placeholder="name">
-</div>
-<div>
-    <span for="bday">Birfdey:</span>
-    {{hero.birthday | date : "longDate"}}
-</div>
-<div>
-    <label for="price">Price: $ </label>
-    <input type="number" id="price" [(ngModel)]="hero.price">
-</div>
+<h2>Eroii mei dragi</h2>
+<ul class="Heroes">
+    <li *ngFor= "let hero of heroes">
+        <button type="button">
+            <span class="badge">{{hero.id}}. </span>
+            <span class="name">{{hero.name}}</span>
+        </button>
+    </li>
+</ul>
