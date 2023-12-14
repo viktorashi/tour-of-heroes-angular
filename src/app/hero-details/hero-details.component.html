@@ -1,12 +1,12 @@
-<div *ngIf="selectedHero">
-    <h2>{{selectedHero.name | uppercase}} Details</h2>
-    <div>id: {{selectedHero.id}}</div>
-    <div>
-        <label for="hero-name">Hero name: </label>
-        <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
-        <label for="hero-price">Hero price: </label>
-        <input id="hero-price" [(ngModel)]="selectedHero.price" placeholder="price" type="number">
-        <label for="hero-bday">Hero birthday: </label>
-        <input id="hero-bday" [(ngModel)]="selectedHero.birthday" placeholder="bday" type="date"> {{ selectedHero.birthday | date : "longDate" }}
-    </div>
+<h2>
+    {{hero.name | uppercase}} Details</h2>
+<div>id: {{hero.id}}</div>
+<div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    <label for="hero-price">Hero price: </label>
+    <input id="hero-price" [(ngModel)]="hero.price" placeholder="price" type="number">
+    <label for="hero-bday">Hero birthday: </label>
+    <input id="hero-bday" [(ngModel)]="hero.birthday" placeholder="bday" type="date"> {{ hero.birthday | date : "longDate" }}
 </div>
+<button type="button" (click)="goBack()">Inpoi</button>
